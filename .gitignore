@@ -1,0 +1,49 @@
+# ─── Archivos de Local by Flywheel ───────────────────────────────────────────
+local-site.json
+conf/
+logs/
+
+# ─── Entorno ──────────────────────────────────────────────────────────────────
+.env
+
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── WordPress core (se descarga automáticamente con Docker) ──────────────────
+app/public/wp-admin/
+app/public/wp-includes/
+app/public/index.php
+app/public/wp-activate.php
+app/public/wp-blog-header.php
+app/public/wp-comments-post.php
+app/public/wp-config.php
+app/public/wp-config-sample.php
+app/public/wp-cron.php
+app/public/wp-links-opml.php
+app/public/wp-load.php
+app/public/wp-login.php
+app/public/wp-mail.php
+app/public/wp-settings.php
+app/public/wp-signup.php
+app/public/wp-trackback.php
+app/public/xmlrpc.php
+app/public/license.txt
+app/public/readme.html
+
+# ─── wp-content: excluir lo que no es código custom ──────────────────────────
+
+# Archivos subidos por usuarios (no van en git)
+app/public/wp-content/uploads/
+app/public/wp-content/upgrade/
+app/public/wp-content/cache/
+
+# Plugins de terceros (instalar via WP admin o wp-cli)
+app/public/wp-content/plugins/elementor/
+app/public/wp-content/plugins/index.php
+
+# Temas por defecto de WordPress
+app/public/wp-content/themes/twentytwentyfour/
+app/public/wp-content/themes/twentytwentythree/
+app/public/wp-content/themes/twentytwentyfive/
+app/public/wp-content/themes/index.php
