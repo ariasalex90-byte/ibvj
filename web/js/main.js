@@ -12,6 +12,17 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ── 0. Scroll progress bar ─────────────────────────────── */
+  const progressBar = document.getElementById('scroll-progress');
+  const updateProgress = () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    if (progressBar) progressBar.style.width = pct + '%';
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+
+
   /* ── 1. Navbar scroll ────────────────────────────────────── */
   const navbar = document.getElementById('navbar');
 
@@ -132,7 +143,34 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ── 8. Scroll suave para el botón "Conoce más" del hero ─── */
+  /* ── 8. Videos — lightbox + "Ver más" ───────────────────── */
+document.querySelectorAll('.video-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const id = card.dataset.videoId;
+      window.open(`https://www.youtube.com/watch?v=${id}`, '_blank', 'noopener,noreferrer');
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+    });
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+  });
+
+  // "Ver más" button
+  const verMasBtn = document.getElementById('verMasVideos');
+  if (verMasBtn) {
+    verMasBtn.addEventListener('click', () => {
+      document.querySelectorAll('.video-extra').forEach(el => {
+        el.classList.add('visible-extra');
+        el.classList.add('reveal');
+        revealObserver.observe(el);
+      });
+      verMasBtn.style.display = 'none';
+    });
+  }
+
+
+  /* ── 9. Scroll suave ────────────────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       const target = document.querySelector(anchor.getAttribute('href'));
