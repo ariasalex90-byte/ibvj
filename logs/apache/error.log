@@ -1,0 +1,31 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using Davids-MacBook-Air.local. Set the 'ServerName' directive globally to suppress this message
+[Wed Mar 11 18:28:08.297587 2026] [mpm_event:notice] [pid 38705:tid 8683401344] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Wed Mar 11 18:28:08.297894 2026] [core:notice] [pid 38705:tid 8683401344] AH00094: Command line: '/Users/davidmercado/Library/Application Support/Local/lightning-services/apache-2.4.43+11/bin/darwin-arm64/bin/httpd -D FOREGROUND -f /Users/davidmercado/Library/Application Support/Local/run/CuHQ8uO5L/conf/apache/apache2.conf'
+[Thu Mar 12 19:37:15.052580 2026] [mpm_event:notice] [pid 38705:tid 8683401344] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using Davids-MacBook-Air.local. Set the 'ServerName' directive globally to suppress this message
+[Fri Mar 20 01:42:19.674420 2026] [mpm_event:notice] [pid 80960:tid 8631038208] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Fri Mar 20 01:42:19.674995 2026] [core:notice] [pid 80960:tid 8631038208] AH00094: Command line: '/Users/davidmercado/Library/Application Support/Local/lightning-services/apache-2.4.43+11/bin/darwin-arm64/bin/httpd -D FOREGROUND -f /Users/davidmercado/Library/Application Support/Local/run/CuHQ8uO5L/conf/apache/apache2.conf'
+[Fri Mar 20 05:23:26.575580 2026] [mpm_event:notice] [pid 80960:tid 8631038208] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using Davids-MacBook-Air.local. Set the 'ServerName' directive globally to suppress this message
+[Fri Mar 20 21:10:24.186338 2026] [mpm_event:notice] [pid 15661:tid 8386294016] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Fri Mar 20 21:10:24.186678 2026] [core:notice] [pid 15661:tid 8386294016] AH00094: Command line: '/Users/davidmercado/Library/Application Support/Local/lightning-services/apache-2.4.43+11/bin/darwin-arm64/bin/httpd -D FOREGROUND -f /Users/davidmercado/Library/Application Support/Local/run/CuHQ8uO5L/conf/apache/apache2.conf'
+[Sat Mar 21 04:05:13.478920 2026] [mpm_event:notice] [pid 15661:tid 8386294016] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using Davids-MacBook-Air.local. Set the 'ServerName' directive globally to suppress this message
+[Sat Mar 21 04:12:10.039056 2026] [mpm_event:notice] [pid 93706:tid 8386294016] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Sat Mar 21 04:12:10.042999 2026] [core:notice] [pid 93706:tid 8386294016] AH00094: Command line: '/Users/davidmercado/Library/Application Support/Local/lightning-services/apache-2.4.43+11/bin/darwin-arm64/bin/httpd -D FOREGROUND -f /Users/davidmercado/Library/Application Support/Local/run/CuHQ8uO5L/conf/apache/apache2.conf'
+[Sat Mar 21 04:36:33.244399 2026] [mpm_event:notice] [pid 93706:tid 8386294016] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using Davids-MacBook-Air.local. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 22 12:05:33.488929 2026] [mpm_event:notice] [pid 2519:tid 8572530944] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Sun Mar 22 12:05:33.489547 2026] [core:notice] [pid 2519:tid 8572530944] AH00094: Command line: '/Users/davidmercado/Library/Application Support/Local/lightning-services/apache-2.4.43+11/bin/darwin-arm64/bin/httpd -D FOREGROUND -f /Users/davidmercado/Library/Application Support/Local/run/CuHQ8uO5L/conf/apache/apache2.conf'
+[Mon Mar 23 01:26:54.169710 2026] [mpm_event:notice] [pid 2519:tid 8572530944] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using Davids-MacBook-Air.local. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 24 22:21:34.900620 2026] [mpm_event:notice] [pid 69597:tid 8432414976] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Tue Mar 24 22:21:34.901171 2026] [core:notice] [pid 69597:tid 8432414976] AH00094: Command line: '/Users/davidmercado/Library/Application Support/Local/lightning-services/apache-2.4.43+11/bin/darwin-arm64/bin/httpd -D FOREGROUND -f /Users/davidmercado/Library/Application Support/Local/run/CuHQ8uO5L/conf/apache/apache2.conf'
+[Wed Mar 25 11:01:27.317231 2026] [mpm_event:notice] [pid 69597:tid 8432414976] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using Davids-MacBook-Air.local. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 31 21:31:45.991511 2026] [mpm_event:notice] [pid 2451:tid 8309627072] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Tue Mar 31 21:31:45.991890 2026] [core:notice] [pid 2451:tid 8309627072] AH00094: Command line: '/Users/davidmercado/Library/Application Support/Local/lightning-services/apache-2.4.43+11/bin/darwin-arm64/bin/httpd -D FOREGROUND -f /Users/davidmercado/Library/Application Support/Local/run/CuHQ8uO5L/conf/apache/apache2.conf'
+[Wed Apr 01 02:29:30.359607 2026] [mpm_event:notice] [pid 2451:tid 8309627072] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using Davids-MacBook-Air.local. Set the 'ServerName' directive globally to suppress this message
+[Wed Apr 01 19:24:05.168497 2026] [mpm_event:notice] [pid 24024:tid 8433064128] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Wed Apr 01 19:24:05.168841 2026] [core:notice] [pid 24024:tid 8433064128] AH00094: Command line: '/Users/davidmercado/Library/Application Support/Local/lightning-services/apache-2.4.43+11/bin/darwin-arm64/bin/httpd -D FOREGROUND -f /Users/davidmercado/Library/Application Support/Local/run/CuHQ8uO5L/conf/apache/apache2.conf'

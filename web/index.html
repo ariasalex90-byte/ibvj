@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Iglesia Bautista Valle De Josafat — Bogotá. Un lugar donde conocer a Dios, crecer en comunidad y vivir con propósito." />
+  <title>Iglesia Bautista Valle De Josafat</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="assets/images/logo.jpg" alt="IBVJ Logo" />
+        <span class="nav-logo-text">IBVJ</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#bienvenida">Inicio</a></li>
+        <li><a href="#horarios">Horarios</a></li>
+        <li><a href="#pastor">Pastorado</a></li>
+        <li><a href="#ministerios">Ministerios</a></li>
+        <li><a href="#doctrina">Doctrina</a></li>
+        <li><a href="#misiones">Misiones</a></li>
+        <li><a href="#contacto" class="nav-cta">Contáctanos</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO — Video de fondo
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="inicio" class="hero">
+    <div class="hero-video-wrapper">
+      <video autoplay muted loop playsinline id="heroVideo">
+        <source src="assets/videos/church-banner-1.mp4" type="video/mp4" />
+        <source src="assets/videos/church-banner-2.mp4" type="video/mp4" />
+      </video>
+      <!-- Fallback si el video no carga -->
+      <div class="hero-video-fallback"></div>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-pre">Bienvenidos a la</div>
+      <h1>
+        <span class="hero-title-1">Iglesia Bautista</span>
+        <span class="hero-title-2">Valle De Josafat</span>
+      </h1>
+      <p class="hero-verse">
+        "Tanto amó Dios al mundo que dio a su Hijo, para que todo el que cree en Él<br class="hide-mobile" />
+        no se pierda, sino que tenga vida eterna."
+        <em>— Juan 3:16</em>
+      </p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/573229059423?text=Hola%21%20Quiero%20informaci%C3%B3n%20sobre%20su%20congregaci%C3%B3n"
+           class="btn btn-primary" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Contáctanos
+        </a>
+        <a href="#bienvenida" class="btn btn-outline">
+          Conoce más <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+
+    <a href="#bienvenida" class="hero-scroll-hint" aria-label="Bajar">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       BIENVENIDA
+       Imagen: congregation.jpg (IMG-20251228-WA0014.jpg)
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="bienvenida" class="section">
+    <div class="container two-col reveal">
+      <div class="col-image">
+        <img src="assets/images/congregation.jpg"
+             alt="Congregación de la Iglesia Bautista Valle De Josafat"
+             loading="lazy" />
+      </div>
+      <div class="col-text">
+        <span class="tag">Nuestra familia</span>
+        <h2>Bienvenidos a nuestra familia en Cristo</h2>
+        <div class="separator"></div>
+        <p class="lead">Un lugar donde conocer a Dios, crecer en comunidad y vivir con propósito.</p>
+        <p>
+          Aquí no vienes solo a asistir, <strong>vienes a pertenecer</strong>. Creemos que cada persona
+          tiene un propósito dado por Dios para servirle, y nuestro deseo es caminar contigo en ese proceso.
+        </p>
+        <p>
+          Ya sea tu primera vez o lleves años en la fe, este es un espacio para encontrar y permanecer
+          en la <strong>verdad, la fe en Cristo y una comunidad real.</strong>
+        </p>
+        <a href="#horarios" class="btn btn-secondary mt-1">Ver horarios de culto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HORARIOS
+       ⚠️  Editar días y horas según el horario real de la iglesia
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="horarios" class="section section-dark-teal">
+    <div class="container text-center reveal">
+      <span class="tag tag-light">Únete a nosotros</span>
+      <h2 class="text-white">Horarios de culto</h2>
+      <div class="separator separator-light"></div>
+      <p class="section-subtitle text-white-70">
+        Te esperamos cada semana. Todos son bienvenidos.
+      </p>
+
+      <div class="horarios-grid">
+        <div class="horario-card">
+          <div class="horario-icon"><i class="fas fa-book-open"></i></div>
+          <div class="horario-dia">Domingo</div>
+          <div class="horario-nombre">Escuela Dominical</div>
+          <div class="horario-hora">9:00 AM</div>
+        </div>
+        <div class="horario-card horario-card--featured">
+          <div class="horario-icon"><i class="fas fa-church"></i></div>
+          <div class="horario-dia">Domingo</div>
+          <div class="horario-nombre">Culto Principal</div>
+          <div class="horario-hora">11:00 AM</div>
+        </div>
+        <div class="horario-card">
+          <div class="horario-icon"><i class="fas fa-bible"></i></div>
+          <div class="horario-dia">Miércoles</div>
+          <div class="horario-nombre">Estudio Bíblico</div>
+          <div class="horario-hora">7:00 PM</div>
+        </div>
+        <div class="horario-card">
+          <div class="horario-icon"><i class="fas fa-hands-praying"></i></div>
+          <div class="horario-dia">Viernes</div>
+          <div class="horario-nombre">Noche de Oración</div>
+          <div class="horario-hora">7:00 PM</div>
+        </div>
+      </div>
+
+      <p class="horarios-note">
+        <i class="fas fa-map-marker-alt"></i>
+        Cl. 134 #17-2 a, Bogotá &nbsp;·&nbsp;
+        <a href="https://wa.me/573229059423" target="_blank" rel="noopener">
+          ¿Primera vez? Escríbenos
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PASTOR
+       Imagen: pastor.png
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="pastor" class="section section-light">
+    <div class="container text-center reveal">
+      <span class="tag">Pastorado</span>
+      <h2>Mensaje del pastor</h2>
+      <div class="separator"></div>
+    </div>
+    <div class="container pastor-layout reveal">
+      <div class="pastor-foto-wrapper">
+        <img src="assets/images/pastor.png"
+             alt="Pastor Mauricio Beltrán"
+             class="pastor-foto"
+             loading="lazy" />
+        <div class="pastor-badge">20 años en el ministerio</div>
+      </div>
+      <div class="pastor-texto">
+        <blockquote>
+          <p>
+            "Quiero darles la bienvenida a nuestra Iglesia Bautista Valle de Josafat.
+            Tenemos una experiencia de <strong>20 años en el Ministerio</strong>, con mi esposa, con mi familia;
+            y de tal manera que nos ha permitido el Señor llevar el Ministerio a muchas personas y a muchas familias."
+          </p>
+          <p>
+            "El principio fundamental de nuestra iglesia es ser <strong>bibliocéntrica y cristocéntrica</strong>,
+            predicar la palabra de Dios pura, con doctrina pura y de tal manera pacificar un evangelio
+            que nos lleve a la vida eterna…"
+          </p>
+          <p>
+            "Tenemos diferentes ministerios: el Ministerio de enseñanza, el ministerio de alabanza,
+            los ministerios de oración y muchos más, que pueden enriquecer su vida espiritual…
+            Estamos para servirles como siervos de Jesucristo."
+          </p>
+        </blockquote>
+        <div class="pastor-firma">
+          <strong>Mauricio Beltrán</strong>
+          <span>Pastor — Iglesia Bautista Valle De Josafat</span>
+        </div>
+        <a href="#contacto" class="btn btn-secondary mt-1">Escríbenos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MINISTERIOS
+       Imágenes: damas.jpg, jovenes.jpg, ninos.jpg, oracion.jpg, consolacion.jpg
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="ministerios" class="section">
+    <div class="container text-center reveal">
+      <span class="tag">Participa</span>
+      <h2>Nuestros ministerios</h2>
+      <div class="separator"></div>
+      <p class="section-subtitle">
+        Dios ha dado dones a cada uno para edificar a su iglesia y servir a otros con amor.<br />
+        Hay un espacio para ti, sin importar tu edad o etapa de vida.
+      </p>
+    </div>
+
+    <div class="ministerios-grid reveal">
+      <article class="ministerio-card">
+        <img src="assets/images/ministerio-damas.jpg" alt="Ministerio de Damas" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-heart ministerio-icon"></i>
+          <h3>Damas</h3>
+          <p>Comunidad de mujeres que crecen juntas en la fe.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/ministerio-jovenes.jpg" alt="Ministerio de Jóvenes" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-fire ministerio-icon"></i>
+          <h3>Jóvenes</h3>
+          <p>Espacio para jóvenes que buscan vivir su fe con propósito.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/ministerio-ninos.jpg" alt="Ministerio de Niños" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-star ministerio-icon"></i>
+          <h3>Niños</h3>
+          <p>Enseñamos a los más pequeños el amor de Cristo.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/ministerio-oracion.jpg" alt="Ministerio de Oración" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-hands-praying ministerio-icon"></i>
+          <h3>Oración</h3>
+          <p>Intercedemos juntos por la iglesia, las familias y las naciones.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/ministerio-consolacion.jpg" alt="Ministerio de Consolación" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-dove ministerio-icon"></i>
+          <h3>Consolación</h3>
+          <p>Acompañamos a quienes atraviesan momentos difíciles.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="container text-center reveal">
+      <a href="#contacto" class="btn btn-secondary mt-2">Quiero participar</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SANA DOCTRINA
+       Imágenes: william.jpeg, misionero.jpeg, apostle-paul.jpg
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="doctrina" class="section section-navy">
+    <div class="container reveal">
+      <div class="doctrina-header text-center">
+        <span class="tag tag-light">Fundamento</span>
+        <h2 class="text-white">Sana doctrina</h2>
+        <div class="separator separator-accent"></div>
+        <blockquote class="doctrina-verse">
+          "Pero tú habla lo que está de acuerdo con la sana doctrina."
+          <cite>— Tito 2:1</cite>
+        </blockquote>
+        <p class="text-white-70">
+          Es el fundamento que define quién es Dios, qué es el evangelio y cómo vivimos la fe.
+          Una iglesia sana se edifica sobre la verdad revelada en las Escrituras.
+          La sana doctrina protege el evangelio, guía la vida del creyente y glorifica a Dios.
+        </p>
+      </div>
+
+      <div class="doctrina-galeria">
+        <figure>
+          <img src="assets/images/william.jpeg"
+               alt="Figura bíblica — William"
+               loading="lazy" />
+          <figcaption>La herencia de la fe</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/apostle-paul.jpg"
+               alt="El Apóstol Pablo en su estudio — Rembrandt, 1627–1630"
+               loading="lazy" />
+          <figcaption>Rembrandt van Rijn<br /><em>"El apóstol Pablo" — 1627</em></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/misionero.jpeg"
+               alt="Misionero"
+               loading="lazy" />
+          <figcaption>El llamado a las naciones</figcaption>
+        </figure>
+      </div>
+
+      <div class="text-center">
+        <a href="#contacto" class="btn btn-accent mt-2">
+          <i class="fas fa-file-alt"></i> Declaración de fe
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       EVANGELISMO Y MISIONES
+       Imágenes: illustration.png, missions-event.jpg (IMG-20251019-WA0016.jpg)
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="misiones" class="section section-light">
+    <div class="container two-col two-col--reverse reveal">
+      <div class="col-text">
+        <span class="tag">Alcance</span>
+        <h2>Evangelismo y misiones</h2>
+        <div class="separator"></div>
+        <p class="lead">El evangelio no se guarda, se anuncia.</p>
+        <p>
+          Creemos que la Gran Comisión es el mandato central de la iglesia.
+          Salimos activamente a compartir el evangelio en nuestra ciudad y más allá de nuestras fronteras,
+          sembrando la semilla de la Palabra con fe y oración.
+        </p>
+        <ul class="misiones-list">
+          <li><i class="fas fa-check-circle"></i> Evangelismo urbano en Bogotá</li>
+          <li><i class="fas fa-check-circle"></i> Misiones nacionales e internacionales</li>
+          <li><i class="fas fa-check-circle"></i> Discipulado y formación bíblica</li>
+        </ul>
+        <a href="#contacto" class="btn btn-secondary mt-1">Conocer más</a>
+      </div>
+      <div class="col-image misiones-images">
+        <img src="assets/images/illustration.png"
+             alt="Mapa de misiones — Evangelismo mundial"
+             class="misiones-illustration"
+             loading="lazy" />
+        <img src="assets/images/missions-event.jpg"
+             alt="Evento de evangelismo"
+             class="misiones-foto"
+             loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER / CONTACTO
+  ═══════════════════════════════════════════════════════════════ -->
+  <footer id="contacto">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <!-- Columna 1: Identidad -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="assets/images/logo.jpg" alt="IBVJ" />
+            <span>Iglesia Bautista<br />Valle De Josafat</span>
+          </div>
+          <p class="footer-bio">
+            Una iglesia bibliocéntrica y cristocéntrica comprometida con la predicación pura del evangelio
+            y el discipulado integral de cada creyente.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/IglesiaBautistaVJ/" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/iglesiabautistavj/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@iglesiabautistaVJ" target="_blank" rel="noopener" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.me/573229059423" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.waze.com/es/live-map/directions/iglesia-bautista-valle-de-josafat-carrera-17-134-11-bogota?to=place.w.187433007.1874002392.11811577"
+               target="_blank" rel="noopener" aria-label="Waze">
+              <i class="fab fa-waze"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Horarios -->
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <ul class="footer-list">
+            <li>
+              <strong>Domingo</strong>
+              <span>Escuela Dominical — 9:00 AM</span>
+              <span>Culto Principal — 11:00 AM</span>
+            </li>
+            <li>
+              <strong>Miércoles</strong>
+              <span>Estudio Bíblico — 7:00 PM</span>
+            </li>
+            <li>
+              <strong>Viernes</strong>
+              <span>Noche de Oración — 7:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Cl. 134 #17-2 a, Bogotá, Colombia</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+573229059423">322 905 9423</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:ibautistavalledejosafat@gmail.com">ibautistavalledejosafat@gmail.com</a>
+            </li>
+          </ul>
+          <a href="https://wa.me/573229059423?text=Hola%21%20Quiero%20informaci%C3%B3n%20sobre%20su%20congregaci%C3%B3n"
+             class="btn btn-whatsapp mt-1" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Iglesia Bautista Valle De Josafat · Bogotá, Colombia</p>
+        <p class="footer-verse-small">"La gracia sea con todos los que aman a nuestro Señor Jesucristo." — Ef. 6:24</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/573229059423?text=Hola%21%20Quiero%20informaci%C3%B3n%20sobre%20su%20congregaci%C3%B3n"
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
