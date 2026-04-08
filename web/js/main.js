@@ -143,17 +143,44 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ── 8. Videos — lightbox + "Ver más" ───────────────────── */
-document.querySelectorAll('.video-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const id = card.dataset.videoId;
-      window.open(`https://www.youtube.com/watch?v=${id}`, '_blank', 'noopener,noreferrer');
-    });
-    card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
-    });
+  /* ── 8. Videos — carga en featured player al hacer clic ─── */
+  const featuredIframe = document.getElementById('featuredIframe');
+  const featuredTitle  = document.getElementById('featuredTitle');
+  const featuredDesc   = document.getElementById('featuredDesc');
+
+  document.querySelectorAll('.video-card').forEach(card => {
     card.setAttribute('tabindex', '0');
     card.setAttribute('role', 'button');
+
+    const loadVideo = () => {
+      const id    = card.dataset.videoId;
+      const title = card.querySelector('.video-info p')?.textContent || '';
+
+      // Actualizar featured player
+      if (featuredIframe) {
+        featuredIframe.src = `https://www.youtube.com/embed/${id}?rel=0&modestbranding=1&autoplay=1`;
+        featuredIframe.title = title;
+      }
+      if (featuredTitle) featuredTitle.textContent = title;
+      if (featuredDesc)  featuredDesc.textContent  = 'Reproduciendo ahora';
+
+      // Marcar tarjeta activa
+      document.querySelectorAll('.video-card').forEach(c => c.classList.remove('active-video'));
+      card.classList.add('active-video');
+
+      // Scroll suave al player
+      const featured = document.getElementById('videoFeatured');
+      if (featured) {
+        const navH = document.getElementById('navbar')?.offsetHeight ?? 60;
+        const top  = featured.getBoundingClientRect().top + window.scrollY - navH - 16;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    };
+
+    card.addEventListener('click', loadVideo);
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadVideo(); }
+    });
   });
 
   // "Ver más" button
@@ -161,8 +188,7 @@ document.querySelectorAll('.video-card').forEach(card => {
   if (verMasBtn) {
     verMasBtn.addEventListener('click', () => {
       document.querySelectorAll('.video-extra').forEach(el => {
-        el.classList.add('visible-extra');
-        el.classList.add('reveal');
+        el.classList.add('visible');
         revealObserver.observe(el);
       });
       verMasBtn.style.display = 'none';

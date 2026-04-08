@@ -24,40 +24,35 @@
        NAVBAR
   ═══════════════════════════════════════════════════════════════ -->
   <nav id="navbar">
-    <div class="nav-container">
+    <!-- Logo centrado encima del menú (desktop) -->
+    <div class="nav-logo-bar">
       <a href="#inicio" class="nav-logo">
         <img src="assets/images/logo.jpg" alt="IBVJ Logo" />
-        <span class="nav-logo-text">IBVJ</span>
+        <div class="nav-logo-text-block">
+          <span class="nav-logo-name">Iglesia Bautista</span>
+          <span class="nav-logo-sub">Valle De Josafat</span>
+        </div>
       </a>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#Bienvenida">Inicio</a></li>
-        <li><a href="#horarios">Horarios</a></li>
-        <li><a href="#pastor">Pastorado</a></li>
-        <li><a href="#ministerios">Ministerios</a></li>
-        <li><a href="#doctrina">Doctrina</a></li>
-        <li><a href="#misiones">Misiones</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li>
-          <a href="anuncios.html" class="nav-biblioteca" aria-label="Anuncios para Recordar">
-            <i class="fas fa-bell" aria-hidden="true"></i> Anuncios
-          </a>
-        </li>
-        <li>
-          <a href="https://httpiglesiabautistavalledejosafat.com/"
-             class="nav-biblioteca"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="Biblioteca — abre en nueva pestaña">
-            <i class="fas fa-book-open" aria-hidden="true"></i> Biblioteca
-          </a>
-        </li>
-        <li><a href="#contacto" class="nav-cta">Contáctanos</a></li>
-      </ul>
-
-      <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    </div>
+    <!-- Links de navegación -->
+    <div class="nav-menu-bar">
+      <div class="nav-container">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#bienvenida">Inicio</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#pastor">Pastorado</a></li>
+          <li><a href="#ministerios">Ministerios</a></li>
+          <li><a href="#doctrina">Doctrina</a></li>
+          <li><a href="#misiones">Misiones</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="anuncios.html">Anuncios</a></li>
+          <li><a href="https://httpiglesiabautistavalledejosafat.com/" target="_blank" rel="noopener">Biblioteca</a></li>
+          <li><a href="#contacto" class="nav-cta">Contáctanos</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -396,6 +391,31 @@
       <p class="section-subtitle text-white-70">
         Predicaciones bíblicas, estudios doctrinales y más — disponibles para edificar tu fe en cualquier momento.
       </p>
+    </div>
+
+    <!-- Video destacado -->
+    <div class="container reveal">
+      <div class="video-featured" id="videoFeatured">
+        <div class="video-featured-player">
+          <iframe
+            id="featuredIframe"
+            src="https://www.youtube.com/embed/3wCA2_1dj-Q?rel=0&modestbranding=1"
+            title="Cristo, la luz verdadera y la esperanza de salvación"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-featured-info">
+          <span class="video-featured-label"><i class="fab fa-youtube"></i> Predicación reciente</span>
+          <h3 id="featuredTitle">Cristo, la luz verdadera y la esperanza de salvación</h3>
+          <p id="featuredDesc">Haz clic en cualquier video de abajo para reproducirlo aquí.</p>
+          <a href="https://www.youtube.com/@iglesiabautistaVJ" target="_blank" rel="noopener" class="btn-yt-channel">
+            <i class="fab fa-youtube"></i> Ver canal completo
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="container">
