@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -19,6 +19,7 @@
 <body>
 
   <div id="scroll-progress"></div>
+  <div class="grain" aria-hidden="true"></div>
 
   <!-- ═══════════════════════════════════════════════════════════════
        NAVBAR
@@ -30,6 +31,7 @@
         <img src="assets/images/logo.jpg" alt="IBVJ Logo" />
         <div class="nav-logo-text-block">
           <span class="nav-logo-name">Iglesia Bautista</span>
+          <span class="nav-logo-divider" aria-hidden="true">✦</span>
           <span class="nav-logo-sub">Valle De Josafat</span>
         </div>
       </a>
@@ -70,6 +72,7 @@
     </div>
 
     <div class="hero-overlay"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
 
     <div class="hero-content">
       <div class="hero-pre">Bienvenidos a la</div>
@@ -126,6 +129,18 @@
       </div>
     </div>
   </section>
+
+  <!-- VERSÍCULO PUENTE -->
+  <div class="verse-strip reveal">
+    <div class="verse-strip-inner">
+      <span class="verse-strip-ornament" aria-hidden="true">— ✦ —</span>
+      <blockquote class="verse-strip-text">
+        "No dejando de congregarnos, como algunos tienen por costumbre,
+        sino exhortándonos; y tanto más, cuanto veis que aquel día se acerca."
+      </blockquote>
+      <cite class="verse-strip-ref">Hebreos 10:25</cite>
+    </div>
+  </div>
 
   <!-- ═══════════════════════════════════════════════════════════════
        HORARIOS
@@ -408,7 +423,10 @@
           </iframe>
         </div>
         <div class="video-featured-info">
-          <span class="video-featured-label"><i class="fab fa-youtube"></i> Predicación reciente</span>
+          <span class="video-featured-label">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <i class="fab fa-youtube"></i> Predicación reciente
+          </span>
           <h3 id="featuredTitle">Cristo, la luz verdadera y la esperanza de salvación</h3>
           <p id="featuredDesc">Haz clic en cualquier video de abajo para reproducirlo aquí.</p>
           <a href="https://www.youtube.com/@iglesiabautistaVJ" target="_blank" rel="noopener" class="btn-yt-channel">

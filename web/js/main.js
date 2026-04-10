@@ -196,7 +196,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ── 9. Scroll suave ────────────────────────────────────── */
+  /* ── 9. Hero parallax ───────────────────────────────────── */
+  const heroContent  = document.querySelector('.hero-content');
+  const heroSection  = document.querySelector('.hero');
+  const heroGlow     = document.querySelector('.hero-glow');
+  const noMotion     = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (heroContent && heroSection && !noMotion) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const heroH    = heroSection.offsetHeight;
+      if (scrolled <= heroH) {
+        const p = scrolled / heroH;
+        heroContent.style.transform = `translateY(${scrolled * 0.13}px)`;
+        heroContent.style.opacity   = Math.max(0, 1 - p * 1.9).toString();
+        if (heroGlow) heroGlow.style.transform = `translateY(${scrolled * 0.06}px)`;
+      }
+    }, { passive: true });
+  }
+
+
+  /* ── 11. Scroll suave ───────────────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       const target = document.querySelector(anchor.getAttribute('href'));
