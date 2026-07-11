@@ -213,6 +213,7 @@ p strong { color: var(--text); }
 .btn-outline-dark:hover { background: var(--primary); color: var(--white); }
 
 .bienvenida-btns { display: flex; flex-wrap: wrap; gap: .75rem; }
+.ministerios-btns { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
 
 .btn-youtube {
   background: #FF0000;
@@ -538,11 +539,12 @@ p strong { color: var(--text); }
 
 /* ─── MINISTERIOS ────────────────────────────────────────── */
 .ministerios-grid {
-  display: grid; grid-template-columns: repeat(5,1fr);
+  display: flex; flex-wrap: wrap; justify-content: center;
   gap: 1rem; padding: 2.5rem 24px;
   max-width: 1140px; margin: 0 auto;
 }
 .ministerio-card {
+  flex: 0 0 calc((100% - 4rem) / 5);
   position: relative; border-radius: var(--radius-lg);
   overflow: hidden; height: 340px; cursor: pointer;
   background: #1a1e35;
@@ -949,8 +951,7 @@ footer { background: var(--navy-dark); color: rgba(255,255,255,.75); }
 @media (max-width: 1024px) {
   :root { --nav-total: 108px; }
   .horarios-grid    { grid-template-columns: repeat(2,1fr); }
-  .ministerios-grid { grid-template-columns: repeat(3,1fr); }
-  .ministerio-card  { height: 280px; }
+  .ministerio-card  { flex-basis: calc((100% - 2rem) / 3); height: 280px; }
   .two-col          { gap: 3rem; }
   .pastor-layout    { grid-template-columns: 200px 1fr; gap: 3rem; }
   .footer-grid      { grid-template-columns: 1fr 1fr; }
@@ -990,8 +991,8 @@ footer { background: var(--navy-dark); color: rgba(255,255,255,.75); }
   .pastor-layout { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
   .pastor-foto-wrapper { align-items: center; }
   .pastor-texto blockquote { border-left: none; padding-left: 0; border-top: 3px solid var(--lima); padding-top: 1rem; }
-  .ministerios-grid { grid-template-columns: repeat(2,1fr); padding: 2rem 16px; }
-  .ministerio-card { height: 240px; }
+  .ministerios-grid { padding: 2rem 16px; }
+  .ministerio-card { flex-basis: calc((100% - 1rem) / 2); height: 240px; }
   .ministerio-info p { display: none; }
   .horarios-grid { grid-template-columns: repeat(2,1fr); }
   .horario-card--featured { transform: none; }
@@ -1009,7 +1010,8 @@ footer { background: var(--navy-dark); color: rgba(255,255,255,.75); }
 }
 
 @media (max-width: 480px) {
-  .ministerios-grid { grid-template-columns: 1fr 1fr; gap: .75rem; }
+  .ministerios-grid { gap: .75rem; }
+  .ministerio-card  { flex-basis: calc((100% - .75rem) / 2); }
   .horarios-grid    { grid-template-columns: 1fr; max-width: 300px; margin-left: auto; margin-right: auto; }
   .videos-grid      { grid-template-columns: repeat(2,1fr); gap: .6rem; }
 }
