@@ -108,8 +108,8 @@
   <section id="bienvenida" class="section">
     <div class="container two-col reveal">
       <div class="col-image">
-        <img src="assets/images/congregation.jpg"
-             alt="Congregación de la Iglesia Bautista Valle De Josafat"
+        <img src="assets/images/iglesia.jpeg"
+             alt="Iglesia Bautista Valle De Josafat"
              loading="lazy" />
       </div>
       <div class="col-text">
@@ -125,7 +125,15 @@
           Ya sea tu primera vez o lleves años en la fe, este es un espacio para encontrar y permanecer
           en la <strong>verdad, la fe en Cristo y una comunidad real.</strong>
         </p>
-        <a href="#horarios" class="btn btn-secondary mt-1">Ver horarios de culto</a>
+        <div class="bienvenida-btns mt-1">
+          <a href="#horarios" class="btn btn-secondary">Ver horarios de servicio</a>
+          <a href="anuncios.html" class="btn btn-outline-dark">
+            <i class="fas fa-bullhorn"></i> Anuncios
+          </a>
+          <a href="https://httpiglesiabautistavalledejosafat.com/" target="_blank" rel="noopener" class="btn btn-outline-dark">
+            <i class="fas fa-book-open"></i> Biblioteca
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -149,13 +157,13 @@
   <section id="horarios" class="section section-dark-teal">
     <div class="container text-center reveal">
       <span class="tag tag-light">Únete a nosotros</span>
-      <h2 class="text-white">Horarios de culto</h2>
+      <h2 class="text-white">Horarios de servicio</h2>
       <div class="separator separator-light"></div>
       <p class="section-subtitle text-white-70">
         Te esperamos cada semana. Todos son bienvenidos.
       </p>
 
-      <div class="horarios-grid">
+      <div class="horarios-grid horarios-grid--2">
         <div class="horario-card">
           <div class="horario-icon"><i class="fas fa-book-open"></i></div>
           <div class="horario-dia">Domingo</div>
@@ -165,26 +173,27 @@
         <div class="horario-card horario-card--featured">
           <div class="horario-icon"><i class="fas fa-church"></i></div>
           <div class="horario-dia">Domingo</div>
-          <div class="horario-nombre">Culto Principal</div>
+          <div class="horario-nombre">Servicio Principal</div>
           <div class="horario-hora">11:00 AM</div>
-        </div>
-        <div class="horario-card">
-          <div class="horario-icon"><i class="fas fa-bible"></i></div>
-          <div class="horario-dia">Miércoles</div>
-          <div class="horario-nombre">Estudio Bíblico</div>
-          <div class="horario-hora">7:00 PM</div>
-        </div>
-        <div class="horario-card">
-          <div class="horario-icon"><i class="fas fa-hands-praying"></i></div>
-          <div class="horario-dia">Viernes</div>
-          <div class="horario-nombre">Noche de Oración</div>
-          <div class="horario-hora">7:00 PM</div>
         </div>
       </div>
 
+      <p class="horarios-oracion-cta-text text-white-70">
+        Además, nos reunimos a orar durante la semana — damas, caballeros, jóvenes,
+        congregación y más. Consulta todos los tiempos de oración en nuestros anuncios.
+      </p>
+      <a href="anuncios.html#programacion" class="btn-oracion-cta mt-1">
+        <span class="btn-oracion-cta-icon"><i class="fas fa-hands-praying"></i></span>
+        <span class="btn-oracion-cta-text">
+          <strong>Ver tiempos de oración</strong>
+          <small>Damas · Caballeros · Jóvenes · Congregación</small>
+        </span>
+        <i class="fas fa-arrow-right btn-oracion-cta-arrow"></i>
+      </a>
+
       <p class="horarios-note">
         <i class="fas fa-map-marker-alt"></i>
-        Cl. 134 #17-2 a, Bogotá &nbsp;·&nbsp;
+        Carrera 17 #134-11, Bogotá &nbsp;·&nbsp;
         <a href="https://wa.me/573229059423" target="_blank" rel="noopener">
           ¿Primera vez? Escríbenos
         </a>
@@ -254,7 +263,37 @@
 
     <div class="ministerios-grid reveal">
       <article class="ministerio-card">
-        <img src="assets/images/ministerio-damas.jpg" alt="Ministerio de Damas" loading="lazy" />
+        <img src="assets/images/min-familia-pastoral.jpeg" alt="Ministerio Familia Pastoral" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-book-bible ministerio-icon"></i>
+          <h3>Familia Pastoral</h3>
+          <p>El pastor y su familia, dedicados a guiar y cuidar a la congregación.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/min-familia-copastoral.jpeg" alt="Ministerio Familia Copastoral" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-people-roof ministerio-icon"></i>
+          <h3>Familia Copastoral</h3>
+          <p>Acompañan al pastorado en el cuidado y servicio de la iglesia.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/min-alabanza.jpeg" alt="Ministerio de Alabanza" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-music ministerio-icon"></i>
+          <h3>Alabanza</h3>
+          <p>Adoramos a Dios con música y cantos que exaltan su nombre.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/min-damas.jpeg" alt="Ministerio de Damas" loading="lazy" />
         <div class="ministerio-overlay"></div>
         <div class="ministerio-info">
           <i class="fas fa-heart ministerio-icon"></i>
@@ -264,7 +303,17 @@
       </article>
 
       <article class="ministerio-card">
-        <img src="assets/images/ministerio-jovenes.jpg" alt="Ministerio de Jóvenes" loading="lazy" />
+        <img src="assets/images/min-caballeros.jpeg" alt="Ministerio de Caballeros" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-person ministerio-icon"></i>
+          <h3>Caballeros</h3>
+          <p>Hombres que crecen en fe, oración y hombría cristiana.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/min-jovenes.jpeg" alt="Ministerio de Jóvenes" loading="lazy" />
         <div class="ministerio-overlay"></div>
         <div class="ministerio-info">
           <i class="fas fa-fire ministerio-icon"></i>
@@ -274,32 +323,42 @@
       </article>
 
       <article class="ministerio-card">
-        <img src="assets/images/ministerio-ninos.jpg" alt="Ministerio de Niños" loading="lazy" />
-        <div class="ministerio-overlay"></div>
-        <div class="ministerio-info">
-          <i class="fas fa-star ministerio-icon"></i>
-          <h3>Niños</h3>
-          <p>Enseñamos a los más pequeños el amor de Cristo.</p>
-        </div>
-      </article>
-
-      <article class="ministerio-card">
-        <img src="assets/images/ministerio-oracion.jpg" alt="Ministerio de Oración" loading="lazy" />
+        <img src="assets/images/min-oracion-damas.jpeg" alt="Ministerio Oración de Damas" loading="lazy" />
         <div class="ministerio-overlay"></div>
         <div class="ministerio-info">
           <i class="fas fa-hands-praying ministerio-icon"></i>
-          <h3>Oración</h3>
-          <p>Intercedemos juntos por la iglesia, las familias y las naciones.</p>
+          <h3>Oración de Damas</h3>
+          <p>Mujeres unidas en intercesión por la iglesia y las familias.</p>
         </div>
       </article>
 
       <article class="ministerio-card">
-        <img src="assets/images/ministerio-consolacion.jpg" alt="Ministerio de Consolación" loading="lazy" />
+        <img src="assets/images/min-misionero.jpeg" alt="Ministerio Misionero" loading="lazy" />
         <div class="ministerio-overlay"></div>
         <div class="ministerio-info">
-          <i class="fas fa-dove ministerio-icon"></i>
-          <h3>Consolación</h3>
-          <p>Acompañamos a quienes atraviesan momentos difíciles.</p>
+          <i class="fas fa-globe ministerio-icon"></i>
+          <h3>Misionero</h3>
+          <p>Llevamos el evangelio más allá de nuestras fronteras.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/min-comunicacion.jpeg" alt="Ministerio de Comunicación" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-share-nodes ministerio-icon"></i>
+          <h3>Comunicación</h3>
+          <p>Difundimos la Palabra a través de medios y redes sociales.</p>
+        </div>
+      </article>
+
+      <article class="ministerio-card">
+        <img src="assets/images/min-anuncios.jpeg" alt="Ministerio de Anuncios" loading="lazy" />
+        <div class="ministerio-overlay"></div>
+        <div class="ministerio-info">
+          <i class="fas fa-bullhorn ministerio-icon"></i>
+          <h3>Anuncios</h3>
+          <p>Mantenemos a la congregación informada de la vida de la iglesia.</p>
         </div>
       </article>
     </div>
@@ -331,28 +390,18 @@
       </div>
 
       <div class="doctrina-galeria">
-        <figure>
-          <img src="assets/images/william.jpeg"
-               alt="Figura bíblica — William"
-               loading="lazy" />
-          <figcaption>La herencia de la fe</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/apostle-paul.jpg"
-               alt="El Apóstol Pablo en su estudio — Rembrandt, 1627–1630"
-               loading="lazy" />
-          <figcaption>Rembrandt van Rijn<br /><em>"El apóstol Pablo" — 1627</em></figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/misionero.jpeg"
-               alt="Misionero"
-               loading="lazy" />
-          <figcaption>El llamado a las naciones</figcaption>
+        <figure class="doctrina-biblia">
+          <!-- Para usar una foto real, reemplaza este bloque <div> por:
+               <img src="assets/images/biblia.jpg" alt="La Santa Biblia" loading="lazy" /> -->
+          <div class="doctrina-biblia-visual">
+            <i class="fas fa-book-bible"></i>
+          </div>
+          <figcaption>La Palabra de Dios, nuestro único fundamento</figcaption>
         </figure>
       </div>
 
       <div class="text-center">
-        <a href="#contacto" class="btn btn-accent mt-2">
+        <a href="assets/docs/confesion-de-fe-ibvj.pdf" target="_blank" rel="noopener" class="btn btn-accent mt-2">
           <i class="fas fa-file-alt"></i> Declaración de fe
         </a>
       </div>
@@ -712,13 +761,13 @@
             y el discipulado integral de cada creyente.
           </p>
           <div class="footer-social">
-            <a href="https://www.facebook.com/IglesiaBautistaVJ/" target="_blank" rel="noopener" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/16VS9ymGEo/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/iglesiabautistavj/" target="_blank" rel="noopener" aria-label="Instagram">
+            <a href="https://www.instagram.com/iglesiabautistavj" target="_blank" rel="noopener" aria-label="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.youtube.com/@iglesiabautistaVJ" target="_blank" rel="noopener" aria-label="YouTube">
+            <a href="https://www.youtube.com/@iglesiabautistavj" target="_blank" rel="noopener" aria-label="YouTube">
               <i class="fab fa-youtube"></i>
             </a>
             <a href="https://wa.me/573229059423" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -729,24 +778,42 @@
               <i class="fab fa-waze"></i>
             </a>
           </div>
+
+          <ul class="footer-social-links">
+            <li>
+              <a href="https://www.youtube.com/@iglesiabautistavj" target="_blank" rel="noopener">
+                <i class="fab fa-youtube"></i> youtube.com/@iglesiabautistavj
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/iglesiabautistavj" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i> instagram.com/iglesiabautistavj
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/share/16VS9ymGEo/?mibextid=wwXIfr" target="_blank" rel="noopener">
+                <i class="fab fa-facebook-f"></i> Facebook: Iglesia Bautista VJ
+              </a>
+            </li>
+          </ul>
         </div>
 
         <!-- Columna 2: Horarios -->
         <div class="footer-col">
-          <h4>Horarios</h4>
+          <h4>Horarios de servicio</h4>
           <ul class="footer-list">
             <li>
               <strong>Domingo</strong>
               <span>Escuela Dominical — 9:00 AM</span>
-              <span>Culto Principal — 11:00 AM</span>
+              <span>Servicio Principal — 11:00 AM</span>
             </li>
             <li>
-              <strong>Miércoles</strong>
-              <span>Estudio Bíblico — 7:00 PM</span>
+              <strong>Jueves</strong>
+              <span>Oración presencial — 6:45 PM</span>
             </li>
             <li>
               <strong>Viernes</strong>
-              <span>Noche de Oración — 7:00 PM</span>
+              <span>Oración por Zoom — 7:00 PM</span>
             </li>
           </ul>
         </div>
@@ -757,15 +824,11 @@
           <ul class="footer-contact-list">
             <li>
               <i class="fas fa-map-marker-alt"></i>
-              <span>Cl. 134 #17-2 a, Bogotá, Colombia</span>
-            </li>
-            <li>
-              <i class="fas fa-phone"></i>
-              <a href="tel:+573229059423">322 905 9423</a>
+              <span>Carrera 17 #134-11, Bogotá, Colombia</span>
             </li>
             <li>
               <i class="fas fa-envelope"></i>
-              <a href="mailto:ibautistavalledejosafat@gmail.com">ibautistavalledejosafat@gmail.com</a>
+              <a href="mailto:iglesiabautistavallejosafat@gmail.com">iglesiabautistavallejosafat@gmail.com</a>
             </li>
           </ul>
           <a href="https://wa.me/573229059423?text=Hola%21%20Quiero%20informaci%C3%B3n%20sobre%20su%20congregaci%C3%B3n"
