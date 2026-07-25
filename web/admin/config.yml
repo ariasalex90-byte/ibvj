@@ -7,9 +7,8 @@ backend:
   name: github
   repo: ariasalex90-byte/ibvj
   branch: main
-  # base_url: apunta al "portero" de autenticación (se configura en la Fase 3).
-  # Mientras no esté, el login no funcionará todavía.
-  # base_url: https://TU-CONECTOR-DE-AUTENTICACION
+  # Conector de autenticación (Cloudflare Worker) que hace el login seguro.
+  base_url: https://sveltia-cms-auth.arias-alex90.workers.dev
 
 # Carpeta donde se guardan las fotos que suba el usuario (relativa a la raíz del repo).
 media_folder: "web/assets/images"
