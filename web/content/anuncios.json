@@ -9,11 +9,6 @@
       "titulo": "Nuevos Miembros",
       "descripcion": "Orar para que el Señor traiga a nuestra iglesia los miembros que Él disponga.",
       "icono": "fa-user-plus"
-    },
-    {
-      "titulo": "Crecimiento de los caballeros",
-      "descripcion": "para que el salón de los caballeros crezca en personas",
-      "icono": "fa-hands-praying"
     }
   ],
   "eventos": [
