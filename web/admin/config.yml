@@ -1,0 +1,80 @@
+# ════════════════════════════════════════════════════════════════
+# Configuración del panel de administración (Sveltia CMS)
+# Define qué puede editar el usuario sin tocar código.
+# ════════════════════════════════════════════════════════════════
+
+backend:
+  name: github
+  repo: ariasalex90-byte/ibvj
+  branch: main
+  # base_url: apunta al "portero" de autenticación (se configura en la Fase 3).
+  # Mientras no esté, el login no funcionará todavía.
+  # base_url: https://TU-CONECTOR-DE-AUTENTICACION
+
+# Carpeta donde se guardan las fotos que suba el usuario (relativa a la raíz del repo).
+media_folder: "web/assets/images"
+# Ruta pública de esas fotos en el sitio publicado.
+public_folder: "/assets/images"
+
+# Idioma del panel
+locale: es
+
+site_url: https://iglesiabautistavallejosafat.com
+
+collections:
+  - name: anuncios
+    label: "Anuncios"
+    label_singular: "Anuncios"
+    description: "Peticiones de oración y eventos de la agenda que aparecen en la página de Anuncios."
+    files:
+      - name: contenido
+        label: "Peticiones y Agenda"
+        file: "web/content/anuncios.json"
+        description: "Edita las tarjetas de Peticiones de Oración y de la Agenda."
+        fields:
+          - label: "Peticiones de Oración"
+            name: peticiones
+            widget: list
+            label_singular: "Petición"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Descripción", name: descripcion, widget: text }
+              - label: "Ícono"
+                name: icono
+                widget: select
+                default: "fa-hands-praying"
+                options:
+                  - { label: "Oración (manos)", value: "fa-hands-praying" }
+                  - { label: "Personas / familia", value: "fa-users" }
+                  - { label: "Persona", value: "fa-person" }
+                  - { label: "Nuevo miembro", value: "fa-user-plus" }
+                  - { label: "Niños", value: "fa-child" }
+                  - { label: "Corazón", value: "fa-heart" }
+                  - { label: "Iglesia", value: "fa-church" }
+                  - { label: "Mundo / misiones", value: "fa-globe" }
+
+          - label: "Agenda (Eventos)"
+            name: eventos
+            widget: list
+            label_singular: "Evento"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Descripción", name: descripcion, widget: text, required: false }
+              - { label: "Cuándo (día y hora)", name: cuando, widget: string, required: false, hint: "Ej.: Domingos · 9:00 AM" }
+              - { label: "Lugar", name: lugar, widget: string, required: false, hint: "Ej.: En la iglesia · Presencial" }
+              - label: "Ícono"
+                name: icono
+                widget: select
+                default: "fa-calendar-check"
+                options:
+                  - { label: "Calendario", value: "fa-calendar-check" }
+                  - { label: "Niños", value: "fa-child" }
+                  - { label: "Jóvenes (fuego)", value: "fa-fire" }
+                  - { label: "Fútbol / deporte", value: "fa-futbol" }
+                  - { label: "Café", value: "fa-mug-hot" }
+                  - { label: "Iglesia", value: "fa-church" }
+                  - { label: "Oración (manos)", value: "fa-hands-praying" }
+                  - { label: "Campamento", value: "fa-campground" }
+              - { label: "Etiqueta (opcional)", name: etiqueta, widget: string, required: false, hint: "Ej.: Cambio de fecha. Déjalo vacío si no aplica." }

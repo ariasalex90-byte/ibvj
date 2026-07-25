@@ -1,0 +1,48 @@
+{
+  "peticiones": [
+    {
+      "titulo": "Salvación de Familias",
+      "descripcion": "Orar por la salvación de familiares y amigos de nuestra congregación.",
+      "icono": "fa-users"
+    },
+    {
+      "titulo": "Nuevos Miembros",
+      "descripcion": "Orar para que el Señor traiga a nuestra iglesia los miembros que Él disponga.",
+      "icono": "fa-user-plus"
+    }
+  ],
+  "eventos": [
+    {
+      "titulo": "Clase de Niños",
+      "descripcion": "Enseñanza bíblica para los más pequeños (Vallecitos Kids).",
+      "cuando": "Domingos · 9:00 AM",
+      "lugar": "En la iglesia · Presencial",
+      "icono": "fa-child",
+      "etiqueta": ""
+    },
+    {
+      "titulo": "Reunión de Jóvenes",
+      "descripcion": "Espacio semanal para jóvenes que buscan vivir su fe con propósito.",
+      "cuando": "Sábados · 3:30 PM",
+      "lugar": "En la iglesia · Presencial",
+      "icono": "fa-fire",
+      "etiqueta": ""
+    },
+    {
+      "titulo": "Maratón Deportiva de Fútbol",
+      "descripcion": "Jornada deportiva para toda la congregación.",
+      "cuando": "Nueva fecha: Agosto 2026",
+      "lugar": "Iglesia \"Palabra de Vida\"",
+      "icono": "fa-futbol",
+      "etiqueta": "Cambio de fecha"
+    },
+    {
+      "titulo": "Café con la Pareja Pastoral",
+      "descripcion": "Encuentro informal de consejería y fellowship.",
+      "cuando": "Todos los Viernes · 6:00 PM · Zoom",
+      "lugar": "Por Zoom",
+      "icono": "fa-mug-hot",
+      "etiqueta": ""
+    }
+  ]
+}

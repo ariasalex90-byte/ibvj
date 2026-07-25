@@ -72,18 +72,8 @@
           <p class="section-desc">Unidos en oración, confiando en el poder de Dios.</p>
         </div>
 
-        <div class="cards-grid">
-          <div class="prayer-card">
-            <div class="prayer-card-icon"><i class="fas fa-users"></i></div>
-            <h3>Salvación de Familias</h3>
-            <p>Orar por la salvación de familiares y amigos de nuestra congregación.</p>
-          </div>
-          <div class="prayer-card">
-            <div class="prayer-card-icon"><i class="fas fa-user-plus"></i></div>
-            <h3>Nuevos Miembros</h3>
-            <p>Orar para que el Señor traiga a nuestra iglesia los miembros que Él disponga.</p>
-          </div>
-        </div>
+        <!-- Contenido editable desde /admin (ver content/anuncios.json) -->
+        <div class="cards-grid" data-editable="peticiones"></div>
       </div>
     </section>
 
@@ -405,96 +395,8 @@
           <div class="sep"></div>
         </div>
 
-        <div class="eventos-grid">
-
-          <!-- CLASE DE NIÑOS -->
-          <div class="evento-card">
-            <div class="evento-icon-wrap evento-icon--camp">
-              <i class="fas fa-child"></i>
-            </div>
-            <div class="evento-body">
-              <h3>Clase de Niños</h3>
-              <p class="evento-desc">Enseñanza bíblica para los más pequeños (Vallecitos Kids).</p>
-              <div class="evento-detail">
-                <i class="fas fa-calendar-check"></i>
-                <span><strong>Domingos</strong> · 9:00 AM</span>
-              </div>
-              <div class="evento-detail">
-                <i class="fas fa-church"></i>
-                <span>En la iglesia · Presencial</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- REUNIÓN DE JÓVENES -->
-          <div class="evento-card">
-            <div class="evento-icon-wrap evento-icon--sport">
-              <i class="fas fa-fire"></i>
-            </div>
-            <div class="evento-body">
-              <h3>Reunión de Jóvenes</h3>
-              <p class="evento-desc">Espacio semanal para jóvenes que buscan vivir su fe con propósito.</p>
-              <div class="evento-detail">
-                <i class="fas fa-calendar-check"></i>
-                <span><strong>Sábados</strong> · 3:30 PM</span>
-              </div>
-              <div class="evento-detail">
-                <i class="fas fa-church"></i>
-                <span>En la iglesia · Presencial</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 9. MARATÓN DEPORTIVA -->
-          <div class="evento-card evento-card--cambio">
-            <div class="evento-badge"><i class="fas fa-rotate"></i> Cambio de fecha</div>
-            <div class="evento-icon-wrap evento-icon--sport">
-              <i class="fas fa-futbol"></i>
-            </div>
-            <div class="evento-body">
-              <h3>Maratón Deportiva de Fútbol</h3>
-              <div class="evento-detail">
-                <i class="fas fa-calendar-xmark"></i>
-                <span><s>25 de Abril</s> — Pospuesto</span>
-              </div>
-              <div class="evento-detail evento-detail--new">
-                <i class="fas fa-calendar-check"></i>
-                <span><strong>Nueva fecha: Agosto 2026</strong></span>
-              </div>
-              <div class="evento-detail">
-                <i class="fas fa-church"></i>
-                <span>Iglesia "Palabra de Vida"</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 12. CAFÉ CON LA PAREJA PASTORAL -->
-          <div class="evento-card evento-card--cafe">
-            <div class="evento-icon-wrap evento-icon--cafe">
-              <i class="fas fa-mug-hot"></i>
-            </div>
-            <div class="evento-body">
-              <h3>Café con la Pareja Pastoral</h3>
-              <p class="evento-desc">Encuentro informal de consejería y fellowship.</p>
-              <div class="evento-detail">
-                <i class="fas fa-calendar-check"></i>
-                <span><strong>Todos los Viernes</strong></span>
-              </div>
-              <div class="evento-detail">
-                <i class="fas fa-clock"></i>
-                <span>6:00 PM · Zoom</span>
-              </div>
-              <div class="cafe-verse">
-                "Muchos pensamientos hay en el corazón del hombre; mas el consejo de Jehová permanecerá."
-                <cite>— Proverbios 19:21</cite>
-              </div>
-              <a href="tel:+573229059423" class="btn-evento">
-                <i class="fab fa-zoom fas fa-video"></i> Unirme al Zoom
-              </a>
-            </div>
-          </div>
-
-        </div>
+        <!-- Contenido editable desde /admin (ver content/anuncios.json) -->
+        <div class="eventos-grid" data-editable="eventos"></div>
       </div>
     </section>
 
@@ -529,5 +431,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script src="js/anuncios-content.js"></script>
 </body>
 </html>
