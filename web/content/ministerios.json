@@ -1,0 +1,70 @@
+{
+  "ministerios": [
+    {
+      "nombre": "Familia Pastoral",
+      "descripcion": "El pastor y su familia, dedicados a guiar y cuidar a la congregación.",
+      "foto": "/assets/images/min-familia-pastoral.jpeg",
+      "icono": "fa-book-bible"
+    },
+    {
+      "nombre": "Familia Copastoral",
+      "descripcion": "Acompañan al pastorado en el cuidado y servicio de la iglesia.",
+      "foto": "/assets/images/min-familia-copastoral.jpeg",
+      "icono": "fa-people-roof"
+    },
+    {
+      "nombre": "Alabanza",
+      "descripcion": "Adoramos a Dios con música y cantos que exaltan su nombre.",
+      "foto": "/assets/images/min-alabanza.jpeg",
+      "icono": "fa-music"
+    },
+    {
+      "nombre": "Damas",
+      "descripcion": "Comunidad de mujeres que crecen juntas en la fe.",
+      "foto": "/assets/images/min-damas.jpeg",
+      "icono": "fa-heart"
+    },
+    {
+      "nombre": "Caballeros",
+      "descripcion": "Hombres que crecen en fe, oración y hombría cristiana.",
+      "foto": "/assets/images/min-caballeros.jpeg",
+      "icono": "fa-person"
+    },
+    {
+      "nombre": "Jóvenes",
+      "descripcion": "Espacio para jóvenes que buscan vivir su fe con propósito.",
+      "foto": "/assets/images/min-jovenes.jpeg",
+      "icono": "fa-fire"
+    },
+    {
+      "nombre": "Vallecitos Kids",
+      "descripcion": "Enseñamos a los más pequeños el amor de Cristo con alegría.",
+      "foto": "/assets/images/min-vallecitos-kids.jpeg",
+      "icono": "fa-child"
+    },
+    {
+      "nombre": "Oración de Damas",
+      "descripcion": "Mujeres unidas en intercesión por la iglesia y las familias.",
+      "foto": "/assets/images/min-oracion-damas.jpeg",
+      "icono": "fa-hands-praying"
+    },
+    {
+      "nombre": "Misionero",
+      "descripcion": "Llevamos el evangelio más allá de nuestras fronteras.",
+      "foto": "/assets/images/min-misionero.jpeg",
+      "icono": "fa-globe"
+    },
+    {
+      "nombre": "Comunicación",
+      "descripcion": "Difundimos la Palabra a través de medios y redes sociales.",
+      "foto": "/assets/images/min-comunicacion.jpeg",
+      "icono": "fa-share-nodes"
+    },
+    {
+      "nombre": "Anuncios",
+      "descripcion": "Mantenemos a la congregación informada de la vida de la iglesia.",
+      "foto": "/assets/images/min-anuncios.jpeg",
+      "icono": "fa-bullhorn"
+    }
+  ]
+}

@@ -77,3 +77,40 @@ collections:
                   - { label: "Oración (manos)", value: "fa-hands-praying" }
                   - { label: "Campamento", value: "fa-campground" }
               - { label: "Etiqueta (opcional)", name: etiqueta, widget: string, required: false, hint: "Ej.: Cambio de fecha. Déjalo vacío si no aplica." }
+
+  - name: ministerios
+    label: "Ministerios"
+    label_singular: "Ministerios"
+    description: "Las tarjetas con fotos de la sección 'Nuestros ministerios' en la página principal."
+    files:
+      - name: contenido
+        label: "Nuestros ministerios"
+        file: "web/content/ministerios.json"
+        description: "Agrega, edita o reordena los ministerios y sus fotos."
+        fields:
+          - label: "Ministerios"
+            name: ministerios
+            widget: list
+            label_singular: "Ministerio"
+            summary: "{{fields.nombre}}"
+            fields:
+              - { label: "Nombre", name: nombre, widget: string }
+              - { label: "Descripción", name: descripcion, widget: text }
+              - { label: "Foto", name: foto, widget: image, hint: "Sube una foto (de preferencia cuadrada). Se recorta automáticamente." }
+              - label: "Ícono"
+                name: icono
+                widget: select
+                default: "fa-church"
+                options:
+                  - { label: "Iglesia", value: "fa-church" }
+                  - { label: "Biblia", value: "fa-book-bible" }
+                  - { label: "Familia (techo)", value: "fa-people-roof" }
+                  - { label: "Música / alabanza", value: "fa-music" }
+                  - { label: "Corazón", value: "fa-heart" }
+                  - { label: "Persona", value: "fa-person" }
+                  - { label: "Jóvenes (fuego)", value: "fa-fire" }
+                  - { label: "Niños", value: "fa-child" }
+                  - { label: "Oración (manos)", value: "fa-hands-praying" }
+                  - { label: "Mundo / misiones", value: "fa-globe" }
+                  - { label: "Redes / comunicación", value: "fa-share-nodes" }
+                  - { label: "Anuncios (megáfono)", value: "fa-bullhorn" }
