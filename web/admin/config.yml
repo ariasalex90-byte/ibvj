@@ -78,6 +78,158 @@ collections:
                   - { label: "Campamento", value: "fa-campground" }
               - { label: "Etiqueta (opcional)", name: etiqueta, widget: string, required: false, hint: "Ej.: Cambio de fecha. Déjalo vacío si no aplica." }
 
+          - label: "Programación de oración"
+            name: programacion
+            widget: object
+            fields:
+              - label: "Horario semanal (tabla)"
+                name: horario
+                widget: list
+                label_singular: "Fila"
+                summary: "{{fields.ministerio}} — {{fields.dia}}"
+                fields:
+                  - { label: "Ministerio", name: ministerio, widget: string }
+                  - { label: "Día", name: dia, widget: string }
+                  - { label: "Hora", name: hora, widget: string }
+                  - { label: "Líder", name: lider, widget: string }
+                  - label: "Ícono"
+                    name: icono
+                    widget: select
+                    default: "fa-church"
+                    options:
+                      - { label: "Corazón (Damas)", value: "fa-heart" }
+                      - { label: "Persona (Caballeros)", value: "fa-person" }
+                      - { label: "Rayo (Jóvenes)", value: "fa-bolt" }
+                      - { label: "Iglesia (Congregación)", value: "fa-church" }
+              - label: "Contactos de líderes"
+                name: lideres
+                widget: list
+                label_singular: "Líder"
+                summary: "{{fields.grupo}}"
+                fields:
+                  - { label: "Grupo", name: grupo, widget: string }
+                  - { label: "Nombre", name: nombre, widget: string }
+                  - label: "Teléfonos"
+                    name: telefonos
+                    widget: list
+                    field: { label: "Teléfono", name: telefono, widget: string }
+                  - label: "Ícono"
+                    name: icono
+                    widget: select
+                    default: "fa-person"
+                    options:
+                      - { label: "Corazón", value: "fa-heart" }
+                      - { label: "Persona", value: "fa-person" }
+                      - { label: "Rayo", value: "fa-bolt" }
+
+          - label: "Jueves de Oración"
+            name: jueves
+            widget: object
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Frase", name: frase, widget: string }
+              - { label: "Horario", name: horario, widget: string, hint: "Ej.: Jueves de oración presencial · 6:45 PM" }
+              - { label: "Descripción", name: descripcion, widget: text }
+              - { label: "Teléfono del botón", name: telefono, widget: string }
+
+          - label: "Madres y Abuelas que Oran"
+            name: madres
+            widget: object
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Descripción", name: descripcion, widget: text }
+              - { label: "Cuándo", name: cuando, widget: string, hint: "Ej.: Cada Sábado a las 6:00 A.M." }
+              - { label: "Modo", name: modo, widget: string, hint: "Ej.: Vía Zoom" }
+              - { label: "Nombre de contacto", name: contacto, widget: string }
+              - { label: "Teléfono", name: telefono, widget: string }
+
+          - label: "Ministerios de Provisión"
+            name: provision
+            widget: list
+            label_singular: "Provisión"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Descripción", name: descripcion, widget: text }
+              - { label: "Nombre de contacto", name: contacto, widget: string }
+              - { label: "Teléfono", name: telefono, widget: string, required: false }
+              - label: "Ícono"
+                name: icono
+                widget: select
+                default: "fa-hands-holding-heart"
+                options:
+                  - { label: "Galleta (refrigerio)", value: "fa-cookie-bite" }
+                  - { label: "Camisa (ropa)", value: "fa-shirt" }
+                  - { label: "Canasta", value: "fa-basket-shopping" }
+                  - { label: "Aseo", value: "fa-spray-can-sparkles" }
+                  - { label: "Corazón", value: "fa-heart" }
+                  - { label: "Manos con corazón", value: "fa-hands-holding-heart" }
+              - label: "Color"
+                name: color
+                widget: select
+                default: "orange"
+                options:
+                  - { label: "Naranja", value: "orange" }
+                  - { label: "Azul", value: "blue" }
+                  - { label: "Verde", value: "green" }
+                  - { label: "Turquesa", value: "teal" }
+
+          - label: "Redes sociales (tarjetas de la página)"
+            name: redes
+            widget: list
+            label_singular: "Red"
+            summary: "{{fields.titulo}}"
+            fields:
+              - label: "Tipo"
+                name: tipo
+                widget: select
+                options:
+                  - { label: "YouTube", value: "youtube" }
+                  - { label: "Facebook", value: "facebook" }
+                  - { label: "Instagram", value: "instagram" }
+                  - { label: "WhatsApp", value: "whatsapp" }
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Descripción", name: descripcion, widget: string }
+              - { label: "Enlace (URL)", name: url, widget: string }
+              - { label: "Texto del botón", name: cta, widget: string }
+
+          - label: "Ministerio de Consolación"
+            name: consolacion
+            widget: object
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Subtítulo", name: subtitulo, widget: string }
+              - { label: "Descripción", name: descripcion, widget: text }
+              - label: "Contactos"
+                name: contactos
+                widget: list
+                label_singular: "Contacto"
+                summary: "{{fields.nombre}}"
+                fields:
+                  - { label: "Nombre", name: nombre, widget: string }
+                  - { label: "Teléfono", name: telefono, widget: string }
+
+  - name: contacto
+    label: "Contacto (pie de página)"
+    label_singular: "Contacto"
+    description: "Correo, dirección y redes sociales que aparecen en el pie de página de todo el sitio."
+    files:
+      - name: contenido
+        label: "Datos de contacto"
+        file: "web/content/contacto.json"
+        description: "Correo, dirección y enlaces de redes sociales."
+        fields:
+          - { label: "Correo electrónico", name: email, widget: string }
+          - { label: "Dirección", name: direccion, widget: string }
+          - { label: "WhatsApp (solo números, ej. 573001234567)", name: whatsapp, widget: string }
+          - label: "Redes sociales"
+            name: redes
+            widget: object
+            fields:
+              - { label: "Facebook (URL)", name: facebook, widget: string }
+              - { label: "Instagram (URL)", name: instagram, widget: string }
+              - { label: "YouTube (URL)", name: youtube, widget: string }
+
   - name: ministerios
     label: "Ministerios"
     label_singular: "Ministerios"

@@ -11,6 +11,83 @@
       "icono": "fa-user-plus"
     }
   ],
+  "programacion": {
+    "horario": [
+      { "ministerio": "Damas", "icono": "fa-heart", "dia": "Martes", "hora": "8:00 PM", "lider": "Mercedes Benavides" },
+      { "ministerio": "Caballeros", "icono": "fa-person", "dia": "Miércoles", "hora": "7:00 PM", "lider": "Fernando Beltrán" },
+      { "ministerio": "Jóvenes", "icono": "fa-bolt", "dia": "Miércoles", "hora": "7:00 PM", "lider": "Felipe Reyes" },
+      { "ministerio": "Congregación", "icono": "fa-church", "dia": "Viernes", "hora": "7:00 PM", "lider": "Pastor Mauricio" }
+    ],
+    "lideres": [
+      { "grupo": "Caballeros", "icono": "fa-person", "nombre": "Hno. Fernando Beltrán", "telefonos": ["300 560 2344"] },
+      { "grupo": "Damas", "icono": "fa-heart", "nombre": "Hna. Mercedes Benavides", "telefonos": ["310 272 4597"] },
+      { "grupo": "Jóvenes", "icono": "fa-bolt", "nombre": "Felipe Reyes / Jonathan Calvo", "telefonos": ["319 527 0554", "321 232 2338"] }
+    ]
+  },
+  "jueves": {
+    "titulo": "Jueves de Oración",
+    "frase": "\"O de la tarde\" — Cada jueves nos reunimos a interceder juntos.",
+    "horario": "Jueves de oración presencial · 6:45 PM",
+    "descripcion": "Un espacio especial de oración presencial donde la congregación se une para buscar el rostro de Dios, interceder por las familias y creer juntos por milagros.",
+    "telefono": "573229059423"
+  },
+  "madres": {
+    "titulo": "Madres y Abuelas que Oran",
+    "descripcion": "Un poderoso ministerio de intercesión donde madres y abuelas se unen en oración por sus hijos y nietos. La oración de una madre mueve el corazón de Dios.",
+    "cuando": "Cada Sábado a las 6:00 A.M.",
+    "modo": "Vía Zoom",
+    "contacto": "Hna. Mercedes Benavides",
+    "telefono": "310 272 4597"
+  },
+  "provision": [
+    {
+      "titulo": "Refrigerio de Niños",
+      "descripcion": "Próximo domingo 05 de abril",
+      "icono": "fa-cookie-bite",
+      "color": "orange",
+      "contacto": "Familia Juliana Tiniacá",
+      "telefono": ""
+    },
+    {
+      "titulo": "Donación de Ropa",
+      "descripcion": "Recibimos ropa en buen estado para familias que lo necesitan.",
+      "icono": "fa-shirt",
+      "color": "blue",
+      "contacto": "Ivonne Collazos",
+      "telefono": "314 453 4567"
+    },
+    {
+      "titulo": "Libra de Amor",
+      "descripcion": "Canasta de amor para familias de la congregación en necesidad.",
+      "icono": "fa-basket-shopping",
+      "color": "green",
+      "contacto": "Canasta de amor — Iglesia",
+      "telefono": ""
+    },
+    {
+      "titulo": "Provisión de Aseo",
+      "descripcion": "Donaciones de elementos de aseo para familias de la congregación.",
+      "icono": "fa-spray-can-sparkles",
+      "color": "teal",
+      "contacto": "Flor Ríos",
+      "telefono": "317 763 8520"
+    }
+  ],
+  "redes": [
+    { "tipo": "youtube", "titulo": "YouTube", "descripcion": "Prédicas, transmisiones en vivo y más", "url": "https://www.youtube.com/@iglesiabautistavj", "cta": "Ver canal" },
+    { "tipo": "facebook", "titulo": "Facebook", "descripcion": "Noticias, eventos y comunidad", "url": "https://www.facebook.com/share/16VS9ymGEo/?mibextid=wwXIfr", "cta": "Ver página" },
+    { "tipo": "instagram", "titulo": "Instagram", "descripcion": "Fotos, historias e inspiración diaria", "url": "https://www.instagram.com/iglesiabautistavj", "cta": "Ver perfil" },
+    { "tipo": "whatsapp", "titulo": "WhatsApp", "descripcion": "Escríbenos directamente", "url": "https://wa.me/573229059423", "cta": "Escribir" }
+  ],
+  "consolacion": {
+    "titulo": "Ministerio de Consolación",
+    "subtitulo": "Para la Familia de la Fe",
+    "descripcion": "En los momentos más difíciles, la iglesia camina contigo. Nuestro ministerio de consolación acompaña a las familias en tiempos de pérdida, enfermedad y dolor, brindando apoyo espiritual y presencia amorosa.",
+    "contactos": [
+      { "nombre": "Patricia Ardila", "telefono": "315 789 5520" },
+      { "nombre": "Mercedes Benavides", "telefono": "310 277 4597" }
+    ]
+  },
   "eventos": [
     {
       "titulo": "Clase de Niños",
