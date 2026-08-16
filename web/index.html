@@ -119,16 +119,16 @@
       </div>
       <div class="col-text">
         <span class="tag">Nuestra familia</span>
-        <h2>Bienvenidos a nuestra familia en Cristo</h2>
+        <h2 data-field="bienvenida.titulo">Bienvenidos a nuestra familia en Cristo</h2>
         <div class="separator"></div>
-        <p class="lead">Un lugar donde conocer a Dios, crecer en comunidad y vivir con propósito.</p>
-        <p>
-          Aquí no vienes solo a asistir, <strong>vienes a pertenecer</strong>. Creemos que cada persona
+        <p class="lead" data-field="bienvenida.lead">Un lugar donde conocer a Dios, crecer en comunidad y vivir con propósito.</p>
+        <p data-field="bienvenida.parrafo1">
+          Aquí no vienes solo a asistir, vienes a pertenecer. Creemos que cada persona
           tiene un propósito dado por Dios para servirle, y nuestro deseo es caminar contigo en ese proceso.
         </p>
-        <p>
+        <p data-field="bienvenida.parrafo2">
           Ya sea tu primera vez o lleves años en la fe, este es un espacio para encontrar y permanecer
-          en la <strong>verdad, la fe en Cristo y una comunidad real.</strong>
+          en la verdad, la fe en Cristo y una comunidad real.
         </p>
         <div class="bienvenida-btns mt-1">
           <a href="#horarios" class="btn btn-secondary">Ver horarios de servicio</a>
@@ -164,26 +164,14 @@
       <span class="tag tag-light">Únete a nosotros</span>
       <h2 class="text-white">Horarios de servicio</h2>
       <div class="separator separator-light"></div>
-      <p class="section-subtitle text-white-70">
+      <p class="section-subtitle text-white-70" data-field="horarios.subtitulo">
         Te esperamos cada semana. Todos son bienvenidos.
       </p>
 
-      <div class="horarios-grid horarios-grid--2">
-        <div class="horario-card">
-          <div class="horario-icon"><i class="fas fa-book-open"></i></div>
-          <div class="horario-dia">Domingo</div>
-          <div class="horario-nombre">Escuela Dominical</div>
-          <div class="horario-hora">9:00 AM</div>
-        </div>
-        <div class="horario-card horario-card--featured">
-          <div class="horario-icon"><i class="fas fa-church"></i></div>
-          <div class="horario-dia">Domingo</div>
-          <div class="horario-nombre">Servicio Principal</div>
-          <div class="horario-hora">11:00 AM</div>
-        </div>
-      </div>
+      <!-- Editable desde /admin (content/inicio.json → horarios) -->
+      <div class="horarios-grid horarios-grid--2"></div>
 
-      <p class="horarios-oracion-cta-text text-white-70">
+      <p class="horarios-oracion-cta-text text-white-70" data-field="horarios.nota_oracion">
         Además, nos reunimos a orar durante la semana — damas, caballeros, jóvenes,
         congregación y más. Consulta todos los tiempos de oración en nuestros anuncios.
       </p>
@@ -222,29 +210,20 @@
              alt="Pastor Mauricio Beltrán"
              class="pastor-foto"
              loading="lazy" />
-        <div class="pastor-badge">20 años en el ministerio</div>
+        <div class="pastor-badge" data-field="pastor.badge">20 años en el ministerio</div>
       </div>
       <div class="pastor-texto">
-        <blockquote>
+        <!-- Editable desde /admin (content/inicio.json → pastor) -->
+        <blockquote data-render="pastor.parrafos">
           <p>
             "Quiero darles la bienvenida a nuestra Iglesia Bautista Valle de Josafat.
-            Tenemos una experiencia de <strong>20 años en el Ministerio</strong>, con mi esposa, con mi familia;
+            Tenemos una experiencia de 20 años en el Ministerio, con mi esposa, con mi familia;
             y de tal manera que nos ha permitido el Señor llevar el Ministerio a muchas personas y a muchas familias."
-          </p>
-          <p>
-            "El principio fundamental de nuestra iglesia es ser <strong>bibliocéntrica y cristocéntrica</strong>,
-            predicar la palabra de Dios pura, con doctrina pura y de tal manera pacificar un evangelio
-            que nos lleve a la vida eterna…"
-          </p>
-          <p>
-            "Tenemos diferentes ministerios: el Ministerio de enseñanza, el ministerio de alabanza,
-            los ministerios de oración y muchos más, que pueden enriquecer su vida espiritual…
-            Estamos para servirles como siervos de Jesucristo."
           </p>
         </blockquote>
         <div class="pastor-firma">
-          <strong>Mauricio Beltrán</strong>
-          <span>Pastor — Iglesia Bautista Valle De Josafat</span>
+          <strong data-field="pastor.nombre">Mauricio Beltrán</strong>
+          <span data-field="pastor.cargo">Pastor — Iglesia Bautista Valle De Josafat</span>
         </div>
         <a href="#contacto" class="btn btn-secondary mt-1">Escríbenos</a>
       </div>
@@ -290,10 +269,10 @@
         <h2 class="text-white">Sana doctrina</h2>
         <div class="separator separator-accent"></div>
         <blockquote class="doctrina-verse">
-          "Pero tú habla lo que está de acuerdo con la sana doctrina."
-          <cite>— Tito 2:1</cite>
+          <span data-field="doctrina.versiculo">"Pero tú habla lo que está de acuerdo con la sana doctrina."</span>
+          <cite data-field="doctrina.versiculo_ref">— Tito 2:1</cite>
         </blockquote>
-        <p class="text-white-70">
+        <p class="text-white-70" data-field="doctrina.descripcion">
           Es el fundamento que define quién es Dios, qué es el evangelio y cómo vivimos la fe.
           Una iglesia sana se edifica sobre la verdad revelada en las Escrituras.
           La sana doctrina protege el evangelio, guía la vida del creyente y glorifica a Dios.
@@ -307,7 +286,7 @@
           <div class="doctrina-biblia-visual">
             <i class="fas fa-book-bible"></i>
           </div>
-          <figcaption>La Palabra de Dios, nuestro único fundamento</figcaption>
+          <figcaption data-field="doctrina.biblia_caption">La Palabra de Dios, nuestro único fundamento</figcaption>
         </figure>
       </div>
 
@@ -329,17 +308,14 @@
         <span class="tag">Alcance</span>
         <h2>Evangelismo y misiones</h2>
         <div class="separator"></div>
-        <p class="lead">El evangelio no se guarda, se anuncia.</p>
-        <p>
+        <p class="lead" data-field="misiones.lead">El evangelio no se guarda, se anuncia.</p>
+        <p data-field="misiones.descripcion">
           Creemos que la Gran Comisión es el mandato central de la iglesia.
           Salimos activamente a compartir el evangelio en nuestra ciudad y más allá de nuestras fronteras,
           sembrando la semilla de la Palabra con fe y oración.
         </p>
-        <ul class="misiones-list">
-          <li><i class="fas fa-check-circle"></i> Evangelismo urbano en Bogotá</li>
-          <li><i class="fas fa-check-circle"></i> Misiones nacionales e internacionales</li>
-          <li><i class="fas fa-check-circle"></i> Discipulado y formación bíblica</li>
-        </ul>
+        <!-- Editable desde /admin (content/inicio.json → misiones) -->
+        <ul class="misiones-list"></ul>
         <a href="#contacto" class="btn btn-secondary mt-1">Conocer más</a>
       </div>
       <div class="col-image misiones-images">
@@ -766,6 +742,7 @@
   </a>
 
   <script src="js/main.js"></script>
+  <script src="js/inicio-content.js"></script>
   <script src="js/ministerios-content.js"></script>
   <script src="js/contacto-content.js"></script>
 </body>

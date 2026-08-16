@@ -1,0 +1,41 @@
+{
+  "bienvenida": {
+    "titulo": "Bienvenidos a nuestra familia en Cristo",
+    "lead": "Un lugar donde conocer a Dios, crecer en comunidad y vivir con propósito.",
+    "parrafo1": "Aquí no vienes solo a asistir, vienes a pertenecer. Creemos que cada persona tiene un propósito dado por Dios para servirle, y nuestro deseo es caminar contigo en ese proceso.",
+    "parrafo2": "Ya sea tu primera vez o lleves años en la fe, este es un espacio para encontrar y permanecer en la verdad, la fe en Cristo y una comunidad real."
+  },
+  "horarios": {
+    "subtitulo": "Te esperamos cada semana. Todos son bienvenidos.",
+    "servicios": [
+      { "dia": "Domingo", "nombre": "Escuela Dominical", "hora": "9:00 AM", "icono": "fa-book-open", "destacado": false },
+      { "dia": "Domingo", "nombre": "Servicio Principal", "hora": "11:00 AM", "icono": "fa-church", "destacado": true }
+    ],
+    "nota_oracion": "Además, nos reunimos a orar durante la semana — damas, caballeros, jóvenes, congregación y más. Consulta todos los tiempos de oración en nuestros anuncios."
+  },
+  "pastor": {
+    "badge": "20 años en el ministerio",
+    "parrafos": [
+      "\"Quiero darles la bienvenida a nuestra Iglesia Bautista Valle de Josafat. Tenemos una experiencia de 20 años en el Ministerio, con mi esposa, con mi familia; y de tal manera que nos ha permitido el Señor llevar el Ministerio a muchas personas y a muchas familias.\"",
+      "\"El principio fundamental de nuestra iglesia es ser bibliocéntrica y cristocéntrica, predicar la palabra de Dios pura, con doctrina pura y de tal manera pacificar un evangelio que nos lleve a la vida eterna…\"",
+      "\"Tenemos diferentes ministerios: el Ministerio de enseñanza, el ministerio de alabanza, los ministerios de oración y muchos más, que pueden enriquecer su vida espiritual… Estamos para servirles como siervos de Jesucristo.\""
+    ],
+    "nombre": "Mauricio Beltrán",
+    "cargo": "Pastor — Iglesia Bautista Valle De Josafat"
+  },
+  "doctrina": {
+    "versiculo": "\"Pero tú habla lo que está de acuerdo con la sana doctrina.\"",
+    "versiculo_ref": "— Tito 2:1",
+    "descripcion": "Es el fundamento que define quién es Dios, qué es el evangelio y cómo vivimos la fe. Una iglesia sana se edifica sobre la verdad revelada en las Escrituras. La sana doctrina protege el evangelio, guía la vida del creyente y glorifica a Dios.",
+    "biblia_caption": "La Palabra de Dios, nuestro único fundamento"
+  },
+  "misiones": {
+    "lead": "El evangelio no se guarda, se anuncia.",
+    "descripcion": "Creemos que la Gran Comisión es el mandato central de la iglesia. Salimos activamente a compartir el evangelio en nuestra ciudad y más allá de nuestras fronteras, sembrando la semilla de la Palabra con fe y oración.",
+    "puntos": [
+      "Evangelismo urbano en Bogotá",
+      "Misiones nacionales e internacionales",
+      "Discipulado y formación bíblica"
+    ]
+  }
+}

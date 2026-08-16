@@ -230,6 +230,79 @@ collections:
               - { label: "Instagram (URL)", name: instagram, widget: string }
               - { label: "YouTube (URL)", name: youtube, widget: string }
 
+  - name: inicio
+    label: "Página principal"
+    label_singular: "Página principal"
+    description: "Textos de la página principal: bienvenida, horarios, mensaje del pastor, doctrina y misiones."
+    files:
+      - name: contenido
+        label: "Textos de la página principal"
+        file: "web/content/inicio.json"
+        description: "Edita los textos y horarios de la página de inicio."
+        fields:
+          - label: "Bienvenida"
+            name: bienvenida
+            widget: object
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Frase principal", name: lead, widget: string }
+              - { label: "Párrafo 1", name: parrafo1, widget: text }
+              - { label: "Párrafo 2", name: parrafo2, widget: text }
+          - label: "Horarios de servicio"
+            name: horarios
+            widget: object
+            fields:
+              - { label: "Subtítulo", name: subtitulo, widget: string }
+              - label: "Servicios (tarjetas)"
+                name: servicios
+                widget: list
+                label_singular: "Servicio"
+                summary: "{{fields.nombre}} — {{fields.hora}}"
+                fields:
+                  - { label: "Día", name: dia, widget: string }
+                  - { label: "Nombre", name: nombre, widget: string }
+                  - { label: "Hora", name: hora, widget: string }
+                  - label: "Ícono"
+                    name: icono
+                    widget: select
+                    default: "fa-church"
+                    options:
+                      - { label: "Libro abierto (escuela)", value: "fa-book-open" }
+                      - { label: "Iglesia", value: "fa-church" }
+                      - { label: "Oración (manos)", value: "fa-hands-praying" }
+                      - { label: "Biblia", value: "fa-book-bible" }
+                  - { label: "¿Destacado?", name: destacado, widget: boolean, default: false }
+              - { label: "Nota de oración", name: nota_oracion, widget: text }
+          - label: "Mensaje del pastor"
+            name: pastor
+            widget: object
+            fields:
+              - { label: "Etiqueta (años en el ministerio)", name: badge, widget: string }
+              - label: "Párrafos del mensaje"
+                name: parrafos
+                widget: list
+                field: { label: "Párrafo", name: parrafo, widget: text }
+              - { label: "Nombre", name: nombre, widget: string }
+              - { label: "Cargo", name: cargo, widget: string }
+          - label: "Sana doctrina"
+            name: doctrina
+            widget: object
+            fields:
+              - { label: "Versículo", name: versiculo, widget: text }
+              - { label: "Referencia del versículo", name: versiculo_ref, widget: string }
+              - { label: "Descripción", name: descripcion, widget: text }
+              - { label: "Leyenda de la Biblia", name: biblia_caption, widget: string }
+          - label: "Evangelismo y misiones"
+            name: misiones
+            widget: object
+            fields:
+              - { label: "Frase principal", name: lead, widget: string }
+              - { label: "Descripción", name: descripcion, widget: text }
+              - label: "Puntos (lista con viñetas)"
+                name: puntos
+                widget: list
+                field: { label: "Punto", name: punto, widget: string }
+
   - name: ministerios
     label: "Ministerios"
     label_singular: "Ministerios"
